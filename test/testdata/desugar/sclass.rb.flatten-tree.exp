@@ -133,6 +133,8 @@ begin
 
     <emptyTree>
 
+    <emptyTree>
+
     def wrapper<wrapper>(<blk>)
       <emptyTree>
     end
