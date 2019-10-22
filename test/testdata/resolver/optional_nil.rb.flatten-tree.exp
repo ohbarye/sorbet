@@ -22,28 +22,28 @@ begin
 
     def foo<foo>(x, <blk>)
       begin
-        T.let(nil, String)
+        x = T.let(nil, String)
         x
       end
     end
 
     def bar<bar>(y, <blk>)
       begin
-        T.let(nil, String)
+        y = T.let(nil, String)
         y
       end
     end
 
     def qux<qux>(z, <blk>)
       begin
-        T.let("", String)
+        z = T.let("", String)
         z
       end
     end
 
     def baz<baz>(w, <blk>)
       begin
-        T.let("", String)
+        w = T.let("", String)
         w
       end
     end
