@@ -80,17 +80,43 @@ InsSeq{
             }]
           rhs = InsSeq{
             stats = [
-              Assign{
-                lhs = Local{
-                  localVariable = <U b>
+              If{
+                cond = Send{
+                  recv = ConstantLit{
+                    orig = nullptr
+                    symbol = ::T
+                  }
+                  fun = <U untyped>
+                  block = nullptr
+                  args = [
+                  ]
                 }
-                rhs = Literal{ value = 1 }
+                thenp = Assign{
+                  lhs = Local{
+                    localVariable = <U b>
+                  }
+                  rhs = Literal{ value = 1 }
+                }
+                elsep = EmptyTree
               }
-              Assign{
-                lhs = Local{
-                  localVariable = <U e>
+              If{
+                cond = Send{
+                  recv = ConstantLit{
+                    orig = nullptr
+                    symbol = ::T
+                  }
+                  fun = <U untyped>
+                  block = nullptr
+                  args = [
+                  ]
                 }
-                rhs = Literal{ value = 2 }
+                thenp = Assign{
+                  lhs = Local{
+                    localVariable = <U e>
+                  }
+                  rhs = Literal{ value = 2 }
+                }
+                elsep = EmptyTree
               }
             ],
             expr = InsSeq{

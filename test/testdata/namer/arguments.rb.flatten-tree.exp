@@ -16,8 +16,16 @@ begin
 
     def take_arguments<take_arguments>(a, b, c, d, e, f, g)
       begin
-        b = 1
-        e = 2
+        if ::T.untyped()
+          b = 1
+        else
+          <emptyTree>
+        end
+        if ::T.untyped()
+          e = 2
+        else
+          <emptyTree>
+        end
         begin
           [a, b, c, d, e, f, g]
           h = 1
